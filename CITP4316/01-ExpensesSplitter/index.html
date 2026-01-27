@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExpenseSplitter</title>
+    <title>Cost Cutter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Expense Splitter</h1>
+    <header class="top">
+        <h1>Cost Cutter</h1>
         <p>Split expenses and see who owes what.</p>
     </header>
 
     <main class="card">
         <form id="personForm" class="rowForm">
-            <input id="personInput" type="text" placeholder="Add person name">
+            <input id="personInput" type="text" placeholder="Add person name"/>
             <button>Add Person</button>
         </form>
 
         <form id="expenseForm" class="rowForm">
-            <input id="descInput" type="text" placeholder="Expense description">
-            <input id="amountInput" type="number" placeholder="Amount">
-            <select id="paidbySelect"></select>
+            <input id="descInput" type="text" placeholder="Expense Description" />
+            <input id="amountInput" type="number" placeholder="Amount" />
+            <select id="paidBySelect"></select>
             <button>Add Expense</button>
         </form>
 
@@ -32,22 +32,23 @@
 
         <section>
             <h3>Expenses</h3>
-            <ul id="expensesList" class="list"></ul>
-        <section>
+            <ul id="expenseList" class="list"></ul>
+        </section>
 
         <section>
-            <h3>Summary</h3>
+            <h3>Total</h3>
             <p>
-                Total Spent: <strong id="totalSpent">$0.00</strong><br>
-                split per person: <strong id="splitAmount">$0.00</strong>
-        </p>
-           </section>
+                Total Spent: <strong id="totalSpent">$0.00</strong><br/>
+                Split Per Person: <strong id="splitAmount">$0.00</strong>
+            </p>
+        </section>
 
         <section class="summary">
             <h3>Summary</h3>
             <ul id="summaryList" class="list"></ul>
         </section>
     </main>
+
     <script src="app.js"></script>
 </body>
 </html>
